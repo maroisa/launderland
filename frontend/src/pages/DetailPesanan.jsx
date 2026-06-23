@@ -52,6 +52,8 @@ export default function DetailPesanan() {
                             <span>: {location.state.berat} kg</span>
                             <strong>Status Proses</strong>
                             <span>: {location.state.status_proses}</span>
+                            <strong>Metode Pembayaran</strong>
+                            <span>: {location.state.metode_pembayaran}</span>
                             <strong>Status Pembayaran</strong>
                             <span>: {location.state.status_pembayaran}</span>
                             <strong>Layanan</strong>

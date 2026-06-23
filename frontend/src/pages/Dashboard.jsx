@@ -7,10 +7,10 @@ import Plus from "../assets/svg/Plus.jsx";
 
 export default function Dashboard() {
     const statusStyle = {
-        antri: "bg-gray-500 border-2 border-gray-600",
-        proses: "bg-orange-500 border-2 border-orange-600",
-        selesai: "bg-green-500 border-2 border-green-600",
-        diambil: "bg-purple-500 border-2 border-purple-600",
+        antri: "bg-gray-500",
+        proses: "bg-orange-500",
+        selesai: "bg-green-500",
+        diambil: "bg-purple-500",
     };
 
     const [pesanan, setPesanan] = createSignal();
@@ -75,7 +75,7 @@ export default function Dashboard() {
                                                 <td>{item.nama_pelanggan}</td>
                                                 <td>
                                                     <span
-                                                        class={`w-full font-semibold py-4 badge badge-primary ${statusStyle[item.status_proses]}`}
+                                                        class={`w-full font-semibold py-4 badge badge-primary rounded-full border-0 ${statusStyle[item.status_proses]}`}
                                                     >
                                                         {item.status_proses
                                                             .charAt(0)

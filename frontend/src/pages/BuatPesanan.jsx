@@ -48,7 +48,7 @@ export default function BuatPesanan() {
                             placeholder="John Doe"
                         />
 
-                        <label class="label">Nama Pelanggan</label>
+                        <label class="label">Nomor HP</label>
                         <input
                             required
                             name="no_hp"
